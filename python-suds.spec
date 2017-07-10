@@ -54,6 +54,9 @@ rm -rf $RPM_BUILD_ROOT
 %doc README LICENSE
 
 %changelog
+* Thu Jul 6 2017 Misa <arensiatik@gmail.com> - 2017.07.06
+- Change tempfile.gettempdir() to ~/tmpsuds and create suds/ on demand.
+
 * Thu Sep 8 2010 jortel <jortel@redhat.com> - 0.4-1
 - Fix spelling errors in spec description.
 - Fix source0 URL warning.

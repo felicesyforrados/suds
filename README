@@ -12,6 +12,8 @@ For details, visit:
 
 RELEASE-NOTES:
 =================================================
+varsion 2017.07.06(06-07-17):
+  * Change tempfile.gettempdir() to ~/tmpsuds and create suds/ on demand.
 
 version 0.3.6 (04-31-09):
   * Change hard coded /tmp/suds to tempfile.gettempdir() and create suds/ on demand.
