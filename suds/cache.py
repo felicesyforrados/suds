@@ -137,7 +137,7 @@ class FileCache(Cache):
         @type duration: {unit:value}
         """
         if location is None:
-            location = os.path.join('/usr/local/lib', 'suds')
+            location = os.path.join('/run', 'suds')
         self.location = location
         self.duration = (None, 0)
         self.setduration(**duration)

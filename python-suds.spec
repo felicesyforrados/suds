@@ -54,6 +54,9 @@ rm -rf $RPM_BUILD_ROOT
 %doc README LICENSE
 
 %changelog
+* Thu Oct 19 2017 Misa <arensiatik@gmail.com> - 2017.19.10
+- Change /usr/local/lib/ to /run/ and create suds/ on demand.
+
 * Thu Jul 6 2017 Misa <arensiatik@gmail.com> - 2017.07.06
 - Change tempfile.gettempdir() to ~/tmpsuds and create suds/ on demand.
 

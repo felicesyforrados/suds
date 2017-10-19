@@ -12,6 +12,9 @@ For details, visit:
 
 RELEASE-NOTES:
 =================================================
+varsion 2017.10.19(19-10-17):
+  * Change /usr/local/lib/ to /run/ and create suds/ on demand.
+
 varsion 2017.07.06(06-07-17):
   * Change tempfile.gettempdir() to ~/tmpsuds and create suds/ on demand.
 
