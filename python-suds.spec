@@ -54,6 +54,9 @@ rm -rf $RPM_BUILD_ROOT
 %doc README LICENSE
 
 %changelog
+* Thu Nov 27 2018 Misa <hi@misalabs.com> - 2018.10.27
+- Change /run/ to tempfile.gettempdir()
+
 * Thu Oct 19 2017 Misa <arensiatik@gmail.com> - 2017.19.10
 - Change /usr/local/lib/ to /run/ and create suds/ on demand.
 
@@ -70,7 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 - Added charset=utf-8 to stock content-type http header.
 - Added <?xml version="1.0" encoding="UTF-8"?> to outgoing SOAP messages.
 - Detection of faults in successful (http=200) replies and raise WebFault. Search for <soapenv:Fault/>.
-- Add plugins facility. 
+- Add plugins facility.
 - Fixed Tickets: #251, #313, #314, #334
 
 * Thu Jul 22 2010 David Malcolm <dmalcolm@redhat.com> - 0.3.9-2
@@ -80,11 +83,11 @@ rm -rf $RPM_BUILD_ROOT
 - Bumped python requires to 2.4
 - Replaced stream-based caching in the transport package with document-based caching.
 - Caches pickled Document objects instead of XML text. 2x Faster!
-- No more SAX parsing exceptions on damaged or incomplete cached files. 
+- No more SAX parsing exceptions on damaged or incomplete cached files.
 - Cached WSDL objects. Entire Definitions object including contained Schema object cached via pickle.
 - Copy of soap encoding schema packaged with suds.
 - Refactor Transports to use ProxyHandler instead of urllib2.Request.set_proxy().
-- Added WSSE enhancements <Timestamp/> and <Expires/> support. See: Timestamp token. 
+- Added WSSE enhancements <Timestamp/> and <Expires/> support. See: Timestamp token.
 - Fixed Tickets: #256, #291, #294, #295, #296
 
 * Wed Dec 9 2009 jortel <jortel@redhat.com> - 0.3.8-1
@@ -113,7 +116,7 @@ rm -rf $RPM_BUILD_ROOT
 - Client.clone() method added for lightweight copy of client object.
 - XSD processing fixes/enhancements.
 - Better <simpleType/> by <xs:restriction/> support.
-- Performance enhancements. 
+- Performance enhancements.
 - Fixed tickets: #65, #232, #233, #235, #241, #242, #244, #247, #254, #254, #256, #257, #258
 
 * Sun Jul 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3.6-2
@@ -207,7 +210,7 @@ rm -rf $RPM_BUILD_ROOT
 - Changes acc. #466496 Comment #1
 
 * Fri Oct 10 2008 jortel <jortel@redhat.com> - 0.3.1-1
-- Extends the support for multi-port services introduced earlier. This addition, 
+- Extends the support for multi-port services introduced earlier. This addition,
   provides for multiple services to define the *same* method and suds will
   handle it properly.  See section 'SERVICES WITH MULTIPLE PORTS:'
 - Add support for multi-document document/literal soap binding style.
